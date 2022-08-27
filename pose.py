@@ -19,7 +19,6 @@ while True:
            result=pose.process(rgb_frame)
           
            mpDraw.draw_landmarks(frame,result.pose_landmarks,mp_pose.POSE_CONNECTIONS)
-           list=[]
            if not result.pose_landmarks:
                print("nothing")
            else: 
